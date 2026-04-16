@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --earthquake-color: #90EE90;
+  --table-text-color: rgba(255, 255, 255, 0.7);
+}
+
+
+:root {
+  --bg: #070e1a;
+  --bg2: #0c1624;
+  --border: rgba(255, 255, 255, 0.07);
+  --text: rgba(255, 255, 255, 0.88);
+  --muted: rgba(255, 255, 255, 0.38);
+  --accent: #63c2ff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: monospace;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(99, 194, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 194, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(15px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.subtitle {
+  font-family: monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.viewToggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.viewBtn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  padding: 7px 15px;
+  font-family: monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-right: 1px solid var(--border);
+}
+
+.viewBtn:last-child {
+  border-right: none;
+}
+
+.viewBtn:hover {
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.viewBtnActive {
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--accent);
+}
+
+.main {
+  flex: 1;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.errorBanner {
+  background: rgba(255, 100, 100, 0.1);
+  border: 1px solid rgba(255, 100, 100, 0.3);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: pink;
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.contentArea {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.primaryContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

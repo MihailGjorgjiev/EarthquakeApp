@@ -1,0 +1,77 @@
+# === Node.js / React (Vite) ===
+# Dependency directories
+node_modules/
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+frontend/.vite/
+
+# Vite-specific
+frontend/.vite/
+
+# Environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# npm and yarn logs
+frontend/npm-debug.log
+frontend/yarn-debug.log
+frontend/yarn-error.log
+
+# Editor-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# === Java / Spring Boot ===
+# Build output (Maven)
+backend/target/
+
+# IDE-specific files (IntelliJ, Eclipse)
+backend/.idea/
+backend/.vscode/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/src/main/resources/.env  
+# Spring Boot environment files
+backend/.env
+
+# Maven and Gradle
+backend/.mvn/
+backend/.gradle/
+
+# Application files
+backend/logs/
+backend/*.log
+
+# === Docker / Database ===
+# Environment files
+database/.env
+
+# Docker files
+database/.docker/
+database/docker-compose.override.yml
+database/.dockerignore
+
+# === System and Temporary Files ===
+# Editor backup and swap files
+*.swp
+*.swo
+*.bak
+
+# Logs
+*.log
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db

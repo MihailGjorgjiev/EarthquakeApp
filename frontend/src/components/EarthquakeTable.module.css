@@ -1,0 +1,103 @@
+.tableContainer {
+  margin-top: 2px;
+  width: 100%;
+  overflow: auto;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.th {
+  padding: 15px 15px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.sortable:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.sortArrow {
+  font-size: 1rem;
+}
+
+.row {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.td {
+  padding: 10px 15px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.place {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+}
+
+.time {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+}
+
+.magType {
+  font-family: monospace;
+  font-size: 0.75rem;
+  padding: 2px 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+
+.deleteBtn {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.15s;
+}
+
+.deleteBtn:hover {
+  background: rgba(255, 100, 100, 0.25);
+  border-color: rgba(255, 0, 0, 0.5);
+  color: pink;
+}
+
+.empty {
+  text-align: center;
+  padding: 50px;
+  color: rgba(255, 255, 255, 0.25);
+  font-style: italic;
+}
